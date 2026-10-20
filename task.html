@@ -1,13 +1,60 @@
-<!DOCTYPE html>
 <html lang="id">
 
 <head>
     <meta charset="UTF-8">
-    <title>ini web saya</title>
+    <title>Ini web saya</title>
+
+    <style>
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+            color: green;
+        }
+
+        #info {
+            color: blueviolet;
+            font-weight: bold;
+            font-size: 32px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Hallo World</h1>
-</body>
+    <h1>Halo, Web!</h1>
+    <p>Ini adalah contoh dari paragraf. Ini paragraf ke 1</p>
+    <p style="color:brown; font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif">Ini adalah contoh dari
+        paragraf ke 2, menggunakan css inline</p>
+    <p>Ini adalah paragraf P3 menggunakan css internal</p>
+    </head>
 
-</html>
+<body>
+    <h1>Halo, Web!</h1>
+    <p>Ini adalah contoh dari paragraf. Ini paragraf ke 1</p>
+    <p style="color:brown; font-size:30px; font-family:Georgia, 'Times New Roman', Times, serif">Ini adalah contoh dari
+        paragraf ke 2, menggunakan css inline</p>
+    <p>Ini adalah paragraf P3 menggunakan css internal</p>
+
+    <p id="info">Ini adalah komponen html dengan selector single menggunakna id elemen</p>
+    <button id="btn">Tombol</button>
+
+    <p class="catatan">Ini adalah komponen html dengan selector group menggunakan class</p>
+    <p class="catatan">Ini adalah komponen html dengan selector group menggunakan class</p>
+    <p class="catatan">Ini adalah komponen html dengan selector group menggunakan class</p>
+
+    <script>
+        const tombol = document.querySelector('#btn');
+        const catatan = document.querySelector('.catatan');
+
+        tombol.addEventListener('click', function () {
+            alert('Halo, kamu berhasil mengklik tombol!');
+        });
+
+        catatan.addEventListener('click', function () {
+            alert('Halo, kamu berhasil mengklik catatan!');
+        });
+
+    </script>
+
+</body>
